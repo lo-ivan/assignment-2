@@ -21,18 +21,19 @@
                        </li>";
         document.getElementById('contact-list').insertAdjacentHTML('afterbegin', htmlStr);
       }
-
+      // Get the element of contact list document object 
       var ul = document.getElementById('contact-list');
-
+      // Initiate the page for showing first 10 users
       page(1);
-
+      // Calculate how many pages are needed to be included
       for (let j = 1; j <= Math.ceil(ul.children.length/10); j++) {
         var btn = document.createElement('button');
         btn.addEventListener('click', function() {page(j)});
         btn.innerText = j;
-        document.getElementById('page').appendChild(btn);
+        btn.style.color = '#4ba6c3';
+        document.getElementById('pagination').appendChild(btn);
       }
-      
+      // Display the corresponding 10 user profiles in the selected page
       function page(int) {
         for (let k = 0; k < ul.children.length; k++) {
           if (k < int*10 && k >= (int-1)*10) {
