@@ -1,4 +1,4 @@
-
+[
     {
         "name" : "lilou le gall",
         "image" : "https://randomuser.me/api/portraits/thumb/women/23.jpg",
@@ -129,3 +129,4 @@
         "image" : "https://randomuser.me/api/portraits/thumb/men/41.jpg",
         "joined" : "03/18/15"
     }
+]
